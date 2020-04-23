@@ -1,0 +1,94 @@
+{
+    "qubits": [
+        {
+            "initialState": [
+                "1+0j", 
+                "0"
+            ], 
+            "qubitID": 2
+        }, 
+        {
+            "initialState": [
+                "1+0j", 
+                "0"
+            ], 
+            "qubitID": 1
+        }, 
+        {
+            "initialState": [
+                "1+0j", 
+                "0"
+            ], 
+            "qubitID": 0
+        }
+    ], 
+    "nStages": 6, 
+    "edges": [
+        {
+            "source": "Q-0-S-5", 
+            "target": "Q-1-S-5"
+        }, 
+        {
+            "source": "Q-1-S-4", 
+            "target": "Q-2-S-4"
+        }, 
+        {
+            "source": "Q-0-S-3", 
+            "target": "Q-1-S-3"
+        }
+    ], 
+    "gates": [
+        {
+            "knobs": [
+                "Q-0-S-5", 
+                "Q-1-S-5"
+            ], 
+            "name": "CGATE_CNOT", 
+            "kwargs": {}
+        }, 
+        {
+            "knobs": [
+                "Q-1-S-4", 
+                "Q-2-S-4"
+            ], 
+            "name": "CGATE_CNOT", 
+            "kwargs": {}
+        }, 
+        {
+            "knobs": [
+                "Q-2-S-2"
+            ], 
+            "name": "HADAMARD", 
+            "kwargs": {}
+        }, 
+        {
+            "knobs": [
+                "Q-0-S-3", 
+                "Q-1-S-3"
+            ], 
+            "name": "CGATE_CNOT", 
+            "kwargs": {}
+        }, 
+        {
+            "knobs": [
+                "Q-0-S-2"
+            ], 
+            "name": "HADAMARD", 
+            "kwargs": {}
+        }, 
+        {
+            "knobs": [
+                "Q-1-S-1"
+            ], 
+            "name": "PAULI_X", 
+            "kwargs": {}
+        }, 
+        {
+            "knobs": [
+                "Q-1-S-2"
+            ], 
+            "name": "HADAMARD", 
+            "kwargs": {}
+        }
+    ]
+}
