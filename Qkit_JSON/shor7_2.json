@@ -1,0 +1,91 @@
+{
+    "qubits": [
+        {
+            "initialState": [
+                "1+0j", 
+                "0"
+            ], 
+            "qubitID": 5
+        }, 
+        {
+            "initialState": [
+                "1+0j", 
+                "0"
+            ], 
+            "qubitID": 4
+        }, 
+        {
+            "initialState": [
+                "1+0j", 
+                "0"
+            ], 
+            "qubitID": 3
+        }, 
+        {
+            "initialState": [
+                "1+0j", 
+                "0"
+            ], 
+            "qubitID": 2
+        }, 
+        {
+            "initialState": [
+                "1+0j", 
+                "0"
+            ], 
+            "qubitID": 1
+        }, 
+        {
+            "initialState": [
+                "1+0j", 
+                "0"
+            ], 
+            "qubitID": 0
+        }
+    ], 
+    "nStages": 5, 
+    "edges": [], 
+    "gates": [
+        {
+            "knobs": [
+                "Q-0-S-4", 
+                "Q-1-S-4", 
+                "Q-2-S-4"
+            ], 
+            "name": "MEASURE", 
+            "kwargs": {}
+        }, 
+        {
+            "knobs": [
+                "Q-0-S-3", 
+                "Q-1-S-3", 
+                "Q-2-S-3"
+            ], 
+            "name": "QFT", 
+            "kwargs": {}
+        }, 
+        {
+            "knobs": [
+                "Q-0-S-2", 
+                "Q-1-S-2", 
+                "Q-2-S-2", 
+                "Q-3-S-2", 
+                "Q-4-S-2", 
+                "Q-5-S-2"
+            ], 
+            "name": "UF_X^A(MOD N)", 
+            "kwargs": {
+                "numN": "7"
+            }
+        }, 
+        {
+            "knobs": [
+                "Q-0-S-1", 
+                "Q-1-S-1", 
+                "Q-2-S-1"
+            ], 
+            "name": "QFT", 
+            "kwargs": {}
+        }
+    ]
+}
