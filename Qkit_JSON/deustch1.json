@@ -1,0 +1,60 @@
+{
+    "qubits": [
+        {
+            "initialState": [
+                "0", 
+                "1+0j"
+            ], 
+            "qubitID": 1
+        }, 
+        {
+            "initialState": [
+                "0", 
+                "1+0j"
+            ], 
+            "qubitID": 0
+        }
+    ], 
+    "nStages": 5, 
+    "edges": [], 
+    "gates": [
+        {
+            "knobs": [
+                "Q-1-S-4"
+            ], 
+            "name": "MEASURE", 
+            "kwargs": {}
+        }, 
+        {
+            "knobs": [
+                "Q-0-S-3"
+            ], 
+            "name": "HADAMARD", 
+            "kwargs": {}
+        }, 
+        {
+            "knobs": [
+                "Q-0-S-2", 
+                "Q-1-S-2"
+            ], 
+            "name": "UF_DEUTSCH", 
+            "kwargs": {
+                "choice": 2
+            }
+        }, 
+        {
+            "knobs": [
+                "Q-1-S-1"
+            ], 
+            "name": "HADAMARD", 
+            "kwargs": {}
+        }, 
+        {
+            "knobs": [
+                "Q-0-S-1"
+            ], 
+            "name": "HADAMARD", 
+            "kwargs": {}
+        }
+    ]
+}
