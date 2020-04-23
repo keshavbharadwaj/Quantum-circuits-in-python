@@ -1,0 +1,89 @@
+{
+    "qubits": [
+        {
+            "initialState": [
+                "1+0j", 
+                "0"
+            ], 
+            "qubitID": 2
+        }, 
+        {
+            "initialState": [
+                "1+0j", 
+                "0"
+            ], 
+            "qubitID": 1
+        }, 
+        {
+            "initialState": [
+                "0", 
+                "1+0j"
+            ], 
+            "qubitID": 0
+        }
+    ], 
+    "nStages": 2, 
+    "edges": [], 
+    "gates": [
+        {
+            "knobs": [
+                "Q-0-S-1", 
+                "Q-2-S-1"
+            ], 
+            "name": "CUSTOM", 
+            "kwargs": {
+                "subCircuit": {
+                    "qubits": {
+                        "0": [
+                            "0j", 
+                            "(1+0j)"
+                        ], 
+                        "1": [
+                            "(1+0j)", 
+                            "0j"
+                        ]
+                    }, 
+                    "gates": {
+                        "1": [
+                            [
+                                "CGATE_CNOT", 
+                                [
+                                    0
+                                ], 
+                                [
+                                    1
+                                ], 
+                                {}
+                            ]
+                        ], 
+                        "2": [
+                            [
+                                "CGATE_CNOT", 
+                                [
+                                    1
+                                ], 
+                                [
+                                    0
+                                ], 
+                                {}
+                            ]
+                        ], 
+                        "3": [
+                            [
+                                "CGATE_CNOT", 
+                                [
+                                    0
+                                ], 
+                                [
+                                    1
+                                ], 
+                                {}
+                            ]
+                        ]
+                    }
+                }, 
+                "filePath": "C:/Users/vivek/Desktop/swap.json"
+            }
+        }
+    ]
+}
