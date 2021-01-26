@@ -1,0 +1,59 @@
+{
+    "qubits": [
+        {
+            "initialState": [
+                "1+0j", 
+                "0"
+            ], 
+            "qubitID": 1
+        }, 
+        {
+            "initialState": [
+                "0", 
+                "1+0j"
+            ], 
+            "qubitID": 0
+        }
+    ], 
+    "nStages": 4, 
+    "edges": [
+        {
+            "source": "Q-0-S-3", 
+            "target": "Q-1-S-3"
+        }, 
+        {
+            "source": "Q-1-S-2", 
+            "target": "Q-0-S-2"
+        }, 
+        {
+            "source": "Q-0-S-1", 
+            "target": "Q-1-S-1"
+        }
+    ], 
+    "gates": [
+        {
+            "knobs": [
+                "Q-0-S-3", 
+                "Q-1-S-3"
+            ], 
+            "name": "CGATE_CNOT", 
+            "kwargs": {}
+        }, 
+        {
+            "knobs": [
+                "Q-1-S-2", 
+                "Q-0-S-2"
+            ], 
+            "name": "CGATE_CNOT", 
+            "kwargs": {}
+        }, 
+        {
+            "knobs": [
+                "Q-0-S-1", 
+                "Q-1-S-1"
+            ], 
+            "name": "CGATE_CNOT", 
+            "kwargs": {}
+        }
+    ]
+}
